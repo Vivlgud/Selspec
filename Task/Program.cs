@@ -8,3 +8,13 @@ string[] arrNew = new string[arrWord.Length];
 
 string word = " ";
 int count = 0;
+
+for (int i = 0; i < arrWord.Length; i++)
+{
+    word = arrWord[i];
+    if (word.Length <= 3)
+    {
+        arrNew[count] = word;
+        count++;
+    }
+}
