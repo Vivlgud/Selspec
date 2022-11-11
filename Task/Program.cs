@@ -18,3 +18,13 @@ for (int i = 0; i < arrWord.Length; i++)
         count++;
     }
 }
+if (count == 0) Console.WriteLine("[ ]");
+else
+{
+    string[] arrNewPrint = new string[count];
+    for (int i = 0; i < arrNewPrint.Length; i++)
+    {
+        arrNewPrint[i] = arrNew[i];
+        Console.WriteLine(arrNewPrint[i]);
+    }
+}
